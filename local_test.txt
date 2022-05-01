@@ -1,0 +1,20 @@
+# For local testing purposes
+if __name__ == "__main__":
+  ## Before rest-api structure, testing on local machine with
+  ## constant text
+  with open(r"C:\Users\mrsci\Masaüstü\lorem.txt", 'r') as line:
+    word = line.read()
+    word = word.lower()
+    for a in word:
+      words = word.split()
+
+  # Let's give the necessary parameters for the necessary operations and call the functions
+  print(wordCount(words))
+  print(letters(words))
+  print(avgLength(wordCount(words), letters(words)))
+  print(longest(words))
+  print(duration(words))
+  print(most_common_words(words))
+  print(guess_language(words))
+  print(medianWord(wordCount(words), words))
+  print(medianWordLength(medianWord(wordCount(words), words)))
